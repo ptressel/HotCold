@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="100dip"
+        android:scrollbars="vertical" >
+
+        <TextView
+            android:id="@+id/log"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#1F1F1F"
+            android:text="" />
+    </ScrollView>
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:onClick="bluetoothScanClick"
+        android:text="@string/bluetooth_scan" />
+        
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:onClick="clearLogClick"
+        android:text="@string/clear_log" />
+
+</LinearLayout>

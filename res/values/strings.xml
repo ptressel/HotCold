@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">HotCold</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_hot_cold">HotColdActivity</string>
+    <string name="clear_log">Clear Log File</string>
+    <string name="bluetooth_scan">Scan Bluetooth Devices</string>
+
+</resources>

@@ -185,8 +185,9 @@ public class HotColdActivity extends Activity {
             if (BluetoothDevice.ACTION_FOUND.equals(action)) {
                 // Get the BluetoothDevice object from the Intent
                 BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
+                String rssi = intent.getParcelableExtra(BluetoothDevice.EXTRA_RSSI);
                 // Record device data in the log.
-                updateLog(device.getName() + "\n" + device.getAddress(), true);
+                updateLog(device.getName() + "\n" + device.getAddress() + "\n" + rssi + "\n", true);
             }
         }
     };
